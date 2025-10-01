@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  background: linear-gradient(45deg, #3498db, #8e44ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.compound-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.compound-row:last-child {
+  border-bottom: none;
+}
+
+.compound-title {
+  margin: 0;
+  font-size: 1em;
+  color: #34495e;
+  width: 150px;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.compound-row input,
+.compound-row select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1;
+  font-size: 1em;
+  min-width: 100px;
+}
+
+.compound-row select {
+  flex-grow: 0;
+  width: auto;
+}
+
+.calculation-result {
+  flex-grow: 2;
+  font-weight: bold;
+  color: #2980b9;
+  white-space: nowrap;
+}
+
+.weight-display,
+.volume-display,
+.moles-display {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.weight-display {
+  color: #27ae60;
+}
+
+.volume-display {
+  color: #f1c40f;
+}
+
+.moles-display {
+  color: #8e44ad;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+.buttons button:nth-child(1) {
+  background-color: #2ecc71;
+}
+
+.buttons button:nth-child(2) {
+  background-color: #3498db;
+}
+
+.buttons button:nth-child(3) {
+  background-color: #f39c12;
+}
+
+.reset-button {
+  background-color: #e74c3c;
+}
+
+.results-table-container {
+  margin-top: 40px;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.calculation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  min-width: 700px;
+}
+
+.calculation-table th,
+.calculation-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.calculation-table th {
+  background-color: #34495e;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.calculation-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  .compound-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .compound-row h3 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .compound-row input,
+  .compound-row select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
