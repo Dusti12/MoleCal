@@ -8,7 +8,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "\"C:\\Users\\parma\\AppData\\Local\\GitHubDesktop\\app-3.5.2\\resources\\app\\git\\cmd\\git.exe\" config user.name 'Dusti12' && \"C:\\Users\\parma\\AppData\\Local\\GitHubDesktop\\app-3.5.2\\resources\\app\\git\\cmd\\git.exe\" config user.email 'parmarparth2111@gmail.com' && gh-pages -d dist"
+    "deploy": "\"C:\\Users\\parma\\AppData\\Local\\GitHubDesktop\\app-3.5.2\\resources\\app\\git\\cmd\\git.exe\" config user.name Dusti12 && \"C:\\Users\\parma\\AppData\\Local\\GitHubDesktop\\app-3.5.2\\resources\\app\\git\\cmd\\git.exe\" config user.email parmarparth2111@gmail.com && gh-pages -d dist"
   },
   "dependencies": {
     "file-saver": "^2.0.5",
