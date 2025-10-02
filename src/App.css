@@ -17,6 +17,35 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  .main-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .input-form {
+    gap: 10px;
+  }
+  .compound-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 5px 0;
+  }
+  .compound-title {
+    width: 100%;
+    font-size: 0.95em;
+  }
+}
+
 .title {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
